@@ -1,38 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS - Typescript - MDX - Blog
+
+**UPDATED on 2023-08-22 to use Next.js App Router!**
+
+A Next.js starter template for your next blog or personal site. Built with:
+
+- Next.js [App Router](https://nextjs.org/docs/app)
+- Content processing with [Contentlayer](https://www.contentlayer.dev/)
+- Write posts with [MDX](https://mdxjs.com/)
+- Style with [Tailwind CSS](https://tailwindcss.com/)
+
+This Starter is **heavily** inspired by [Lee Robinson](https://github.com/leerob/leerob.io).
+
+👀 [View the Live Demo](https://nextjs-typescript-mdx-blog.vercel.app/)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+git clone https://github.com/ChangoMan/nextjs-typescript-mdx-blog.git
+cd nextjs-typescript-mdx-blog
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your new site will be up at http://localhost:3000/
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Blog posts can be added to the `posts` directory, in the root folder.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Update the `WEBSITE_HOST_URL` when taking your site live. This lives in `/src/lib/constants.ts`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Make sure to update the `sitemap.ts` file, specifically the `const routes` if you add more pages to the website.
